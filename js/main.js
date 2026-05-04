@@ -151,6 +151,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  /* ── 7. SCROLL TO TOP BUTTON ── */
+  const scrollTopBtn = document.getElementById('scrollTop');
+
+  if (scrollTopBtn) {
+    // Toon/verberg knop op basis van scrollpositie
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+
+    // Scroll naar boven bij klik
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+
   /* ── 8. SMOOTH ANCHOR SCROLL ── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
