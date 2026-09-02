@@ -13,14 +13,16 @@
   <header>
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
+        <ul class="nav-links nav-links-left" role="navigation" aria-label="Hoofdnavigatie">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+        </ul>
         <a href="index.html" class="nav-logo" aria-label="Novée Versbar – Home">
           <img src="assets/logo.jpg" alt="Novée Versbar logo">
         </a>
-        <ul class="nav-links" role="navigation" aria-label="Hoofdnavigatie">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html" class="active">Menu</a></li>
+        <ul class="nav-links nav-links-right">
           <li><a href="over-ons.html">Over ons</a></li>
-          <li><a href="over-ons.html#contact" class="nav-cta">Contact</a></li>
+          <li><a href="over-ons.html#contact">Contact</a></li>
         </ul>
         <button class="hamburger" aria-label="Menu openen" aria-expanded="false">
           <span class="hamburger-line"></span>
@@ -91,7 +93,7 @@
             </div>
             <div class="formula-card fade-in fade-in-delay-1">
               <div class="formula-card-header">
-                <div class="formula-card-name">Açaï Oasis</div>
+                <div class="formula-card-name">Acaï Oasis</div>
                 <div class="formula-card-price">€ 13,50</div>
               </div>
               <p class="formula-card-desc">Açaï, banaan, blauwe bes, chia, amandel, kokos</p>
@@ -193,13 +195,6 @@
                 <div class="menu-item-name">Brood met huisbereid confituur</div>
               </div>
               <div class="menu-item-price">€ 6,50</div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-info">
-                <div class="menu-item-name">Haverpannenkoekjes</div>
-                <div class="menu-item-tags"><span class="tag tag-gv">GV</span><span class="tag tag-lv">LV</span></div>
-              </div>
-              <div class="menu-item-price">€ 13,50</div>
             </div>
             <div class="menu-item">
               <div class="menu-item-info">
@@ -530,7 +525,7 @@
         </section>
 
 
-        <!-- ══════════ SMOOTHIES & SUPERDRINKS ══════════ -->
+        <!-- ══════════ SMOOTHIES ══════════ -->
         <section class="menu-category" id="smoothies" aria-label="Smoothies en superdrinks sectie">
           <div class="menu-category-header">
             <div>
@@ -575,14 +570,6 @@
               <div class="smoothie-price">€ 6,00</div>
             </div>
             <div class="smoothie-card">
-              <div class="smoothie-dot" style="background: #8B0000;"></div>
-              <div class="smoothie-info">
-                <div class="smoothie-name">Red Velvet</div>
-                <div class="smoothie-ing">rode biet · tomaat · wortel · pastinaak · paprika</div>
-              </div>
-              <div class="smoothie-price">€ 6,00</div>
-            </div>
-            <div class="smoothie-card">
               <div class="smoothie-dot" style="background: #3a9e5a;"></div>
               <div class="smoothie-info">
                 <div class="smoothie-name">Green Tornado</div>
@@ -600,44 +587,12 @@
             </div>
           </div>
 
-          <!-- Superdrinks -->
-          <h3 class="menu-sub-title">Superdrinks</h3>
-          <div class="smoothies-grid fade-in">
-            <div class="smoothie-card">
-              <div class="smoothie-dot" style="background: #29b6b6;"></div>
-              <div class="smoothie-info">
-                <div class="smoothie-name">Chia Water Detox</div>
-                <div class="smoothie-ing">komkommer · limoen · munt</div>
-              </div>
-              <div class="smoothie-price">€ 3,90</div>
-            </div>
-            <div class="smoothie-card">
-              <div class="smoothie-dot" style="background: #e8427a;"></div>
-              <div class="smoothie-info">
-                <div class="smoothie-name">Chia Water Glow</div>
-                <div class="smoothie-ing">aardbei · basilicum</div>
-              </div>
-              <div class="smoothie-price">€ 3,90</div>
-            </div>
-            <div class="smoothie-card">
-              <div class="smoothie-dot" style="background: #f0c030;"></div>
-              <div class="smoothie-info">
-                <div class="smoothie-name">Chia Water Energy</div>
-                <div class="smoothie-ing">citroen · gember · honing</div>
-              </div>
-              <div class="smoothie-price">€ 4,20</div>
-            </div>
-          </div>
 
           <!-- Allergenen note -->
           <div style="margin-top: 3rem; padding: 1.5rem 2rem; background: var(--green-light); border-radius: var(--radius-md); border: 1px solid var(--border);">
             <p style="font-size: 0.85rem; color: var(--text);">
               <strong style="color: var(--dark);">Allergenen & intoleranties?</strong><br>
               We maken heel graag iets lekkers op jouw vraag. Spreek ons aan of bel ons op voorhand — wij denken graag mee!
-              <br><span style="display: inline-flex; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.75rem; font-weight: 600;">
-                <span style="background: white; padding: 0.15rem 0.5rem; border-radius: 4px; border: 1px solid var(--border);">GV = Glutenvrij</span>
-                <span style="background: white; padding: 0.15rem 0.5rem; border-radius: 4px; border: 1px solid var(--border);">LV = Lactosevrij</span>
-              </span>
             </p>
           </div>
 
@@ -667,13 +622,17 @@
         </div>
         <div class="footer-col">
           <h4>Openingsuren</h4>
-          <p>Di–Vr: 07:30–17:00<br>
+          <p>Di–Vr: 08:30–17:00<br>
              Zaterdag: 09:00–17:00<br>
              Zondag: 09:00–13:00<br>
              Maandag: Gesloten</p>
           <div style="margin-top: 1.25rem;">
             <h4>Adres</h4>
             <p>Gemeenteplein 15<br>2550 Kontich, België</p>
+          </div>
+          <div style="margin-top: 1.25rem;">
+            <h4>Telefoon</h4>
+            <p><a href="tel:+3234857528">03 485 75 28</a></p>
           </div>
         </div>
       </div>
