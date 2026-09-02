@@ -122,24 +122,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ── 6. PARALLAX HERO (alleen desktop) ── */
+  /* ── 6. PARALLAX HERO (subtiel) ── */
   const heroBg = document.querySelector('.hero-bg');
 
   if (heroBg) {
-    // Parallax enkel op niet-touch apparaten (= geen mobiel)
-    const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-
-    if (!isTouchDevice) {
-      window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        if (scrollY < window.innerHeight) {
-          heroBg.style.transform = `translateY(${scrollY * 0.25}px)`;
-        }
-      }, { passive: true });
-    } else {
-      // Op mobiel: geen transform, background-attachment: scroll (niet fixed)
-      heroBg.style.transform = 'none';
-    }
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (scrollY < window.innerHeight) {
+        heroBg.style.transform = `translateY(${scrollY * 0.25}px)`;
+      }
+    }, { passive: true });
   }
 
 
