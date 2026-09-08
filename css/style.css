@@ -1128,7 +1128,7 @@ section { padding: 5.5rem 0; }
    FOOTER
 ════════════════════════════════════════════ */
 .footer {
-  background: var(--dark);
+  background: var(--green-dark);
   padding: 3.5rem 0 2rem;
 }
 
